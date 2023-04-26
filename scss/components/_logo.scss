@@ -1,0 +1,41 @@
+.logo {
+    transition: opacity 0.5s;
+    &:hover {
+        transition: opacity 0.5s;
+        opacity: 0.8;
+    }
+    display: block;
+    &__main {
+        display: block;
+    }
+    &__main {
+        color: var(--desert-sand);
+        font-size: 32px;
+        font-family: 'Georgia';
+        letter-spacing: 2px;
+    }
+    &__secondary{
+        color: var(--white);
+        font-size: 13px;
+        line-height:14.95px;
+        letter-spacing: 1.3px;
+        padding-top: 2px;
+        padding-left: 3px;
+        font-family: 'Arial';
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
+
+.logo {
+    &_white {
+        .logo__main {
+            color: var(--Wet-asphalt-color);
+        }
+        .logo__secondary{
+            color: var(--Wet-asphalt-color);
+            padding-left: 5px;
+        }
+    }
+
+}

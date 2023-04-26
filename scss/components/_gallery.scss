@@ -1,0 +1,40 @@
+.gallery {
+    .card {
+        margin-bottom: 30px;
+        &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8) {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px)  {
+    .gallery {
+        .card{
+            margin-left: 20px;
+            margin-right: 20px;
+            &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+                display: block;
+            }
+        }
+        &__wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .gallery {
+        &__wrapper {
+            justify-content: space-between;
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+        .card {
+            &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8) {
+                display: block;
+            }
+        }
+    }
+}

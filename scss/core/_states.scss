@@ -1,0 +1,36 @@
+// Классы состояний
+.is-fixed{
+   position: fixed;
+   left: 0;
+   width: 100%;
+}
+
+.is-block {
+   display: block;
+}
+
+.is-relative{
+    position: relative;
+}
+.is-absolute {
+    position: absolute;
+}
+
+.is-uppercase {
+   text-transform: uppercase;
+}
+
+.is-justify-center {
+   justify-content: center;
+}
+.is-text-center {
+   text-align: center;
+}
+.is-margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.is-flex {
+    display: flex;
+}

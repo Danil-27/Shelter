@@ -1,0 +1,39 @@
+.burger {
+    display: block;
+    padding-top: 8px;
+    z-index: 20;
+    transition: transform 0.4s;
+    transform: rotate(0deg);
+    &__line {
+        display: block;
+        background-color: var(--desert-sand);
+        width: 30px;
+        height: 2px;
+        &:not(:first-child){
+            margin-top: 8px;
+        }
+    }
+    &__line-black {
+        background-color: var(--black);
+    }
+}
+ 
+ @media screen and (min-width: 768px){
+    .burger { 
+       display: none;
+    }
+ }
+
+// pages2
+.burger_two {
+    .burger__line {
+        background-color: var(--Wet-asphalt-color);
+    }
+}
+
+
+// ---------------JS
+.burger_click-js {
+    transition: transform 0.4s;
+    transform: rotate(90deg);
+}

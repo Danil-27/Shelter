@@ -1,0 +1,160 @@
+.footer-background {
+    background: url(../images/not-only/noise_tran.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+}
+
+.footer {
+    background: url(../../shelter/images/footer/footer-puppy.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: bottom;
+    background-size: 260px 269px;
+    padding-bottom: 309px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__ref{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--buttom-normal);
+        font-size: 20px;
+        letter-spacing: 1.1px;
+        &:hover {
+            .svg-img {
+                transition: fill .5s, color .5s;
+                fill: var(--white);
+            }
+            .footer__text-link {
+                transition: fill .5s, color .5s;
+                color:  var(--white);
+            }
+        }
+    }
+    .svg-img {
+        flex: 0 0 auto;
+        fill: var(--buttom-normal);
+        transition: fill .5s, color .5s;
+    }
+    &__email {
+        padding-bottom: 39px;
+    }
+
+    &__phone {
+        padding-bottom: 40px;
+        .footer__text-link {
+            padding-top: 1px;
+            padding-left: 21px;
+            letter-spacing: 1.3px;
+        }
+    }
+    &__Boston {
+        padding-left: 0px;
+        line-height: 115%;
+        padding-bottom: 38px;
+        .footer__text-link {
+            margin-right: 5px;
+            letter-spacing: 1.1px;
+        }
+    }
+    &__London {
+        justify-content: start;
+        .footer__text-link {
+            padding-top: 1px;
+            padding-left: 21px;
+            letter-spacing: 1.1px;
+        }
+    }
+    &__text-link {
+        transition: fill .5s, color .5s;
+        padding-left: 21px;
+    }
+}
+
+@media screen and (min-width: 321px) {
+    .footer {
+        &__London {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .footer {
+        &__wrapper {
+            flex-direction: row;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        background-size: 300px 310px;
+        padding-bottom: 334px;
+        &__wrapper {
+        }
+        &__contact {
+            margin-left: 30px;
+            padding-left: 1px;
+        }
+        &__adress {
+            margin-left: 55px;
+        }
+        &__ref {
+            display: flex;
+            justify-content: flex-start;
+        }
+        &__phone , &__email {
+            padding-left: 2px;
+        }
+        &__email {
+            .footer__text-link {
+                padding-top: 1px;
+            }
+        }
+        &__phone {
+            .footer__text-link {
+                padding-top: 2px;
+
+            }
+        }
+        &__Boston {
+            margin-top: -5px;
+            .footer__text-link {
+                padding-left: 20px;
+            }
+
+        }
+        &__London {
+            margin-top: -6px;
+            
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .footer {
+        &__wrapper {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .footer {
+        background-position-x: 96%;
+        background-size: 300px 313px;
+        padding-top: 57px;
+        padding-bottom: 21px;
+        &__wrapper {
+            justify-content: flex-start;
+        }
+        &__contact {
+            margin-left: -6px;
+            padding-left: 1px;
+        }
+        &__adress {
+            margin-left: 157px;
+        }
+    }
+}

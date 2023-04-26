@@ -1,0 +1,155 @@
+.navbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    height: 0px;
+    width: 0px;
+    z-index: 5;
+    &::after {
+        content: '';
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgba(41, 41, 41, 0.6);
+        height: 0px;
+        width: 0px;
+        z-index: -1;
+        transition: opacity 0.5s;
+        opacity: 0;
+    }
+    &__menu {
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    &__die {
+        height: 90px;
+        z-index: 20;
+    }
+    &__die ,  &__menu {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100vw;
+        background: var(--dark-w);
+        transform: translateX(0%);
+        transition: transform 0.5s;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .navbar {
+        &__menu , &__die {
+            width: 85vw;
+        }
+        &__menu{
+            padding-top: 45px;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .navbar {
+        &__menu , &__die {
+            width: 70vw;
+        }
+        &__menu {
+            padding-top: 45px;
+        }
+    }
+}
+
+// Брекпоинт по высоте блока меню 
+// -----------------------------------------------------------------
+@media screen and (min-width: 1px) and (min-height: 1px) {
+    .navbar {
+        &__menu {
+            padding-top: 100px;
+        }
+    }
+}
+@media screen and (min-width: 1px) and (min-height: 500px) {
+    .navbar {
+        &__menu {
+            padding-top: 44px;
+        }
+    }
+}
+// -----------------------------------------------------------------
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        position: static;
+        display: block;
+        height: auto;
+        width: auto;
+        background: var(--transparent);
+        transition: transform 0s;
+        transform: translateX(0%);
+        &::after {
+            display: none;
+        }
+        &__menu {
+            position: static;
+            display: block;
+            background: var(--transparent);
+            height: auto;
+            width: auto;
+            padding-top: 0px;
+            overflow: visible;
+            transform: translateX(0%);
+            transition: transform 0s;
+        }
+        &__die {
+            transition: transform 0s;
+            height: 0;
+            width: 0;
+        }
+    }
+}
+
+
+.navbar_two {
+    .navbar__die {
+        background: var(--bg);
+    }
+    .navbar__menu {
+        background-color: var(--bg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+.navbar_two {
+    .navbar__die {
+        background: var(--transparent);
+    }
+    .navbar__menu {
+        background-color: var(--transparent);
+    }
+}
+}
+
+// --------- Js
+@media screen and (max-width: 768px){
+    .navbar.navbar_click-js{
+        height: 100vh;
+        width: 100vw;
+        &::after {
+            opacity: 1;
+            transition: opacity 0.5s;
+            height: 100vh;
+            width: 100vw;
+        }
+        .navbar__menu , .navbar__die {
+            transition: transform 0.5s;
+            transform: translateX(-100%);
+        }
+    }
+}
+
+

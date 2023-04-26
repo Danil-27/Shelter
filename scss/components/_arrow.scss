@@ -1,0 +1,87 @@
+.arrow-left , .arrow-right {
+    cursor: pointer;
+    position: absolute;
+    top: 455px;
+    border: solid #F1CDB3 2px;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    padding: 23px, 19px, 23px, 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .4s, color .4s,  border .4s;
+    &_active {
+        background-color: var(--click-hover);
+    }
+    &_no-active {
+        border: solid #CDCDCD 2px;
+        color: #CDCDCD;
+        background-color: transparent;
+        cursor: auto;
+ 
+    }
+    &:hover{
+        background-color: var(--click-hover);
+        border: solid var(--click-hover) 2px;
+        transition: background-color .4s, color .4s,  border .4s;
+    }
+    &:active {
+        border: solid #CDCDCD 2px;
+        color: #CDCDCD;
+        background-color: transparent;
+        transition: background-color .2s, color .2s,  border .2s;
+    }
+}
+
+.arrow-right {
+    right: 59px;
+}
+.arrow-left {
+    left: 58px;
+}
+.arrow-l::before {
+    content: "←";
+}
+.arrow-r::before {
+    content: "→";
+}
+
+
+@media screen and (min-width: 768px)  {
+    .arrow-left , .arrow-right {
+        top: 44%;
+        padding-bottom: 1px;
+    }
+    .arrow-left {
+        left: 0;
+    }
+    
+    .arrow-right {
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 1280px)  {
+    .arrow-left , .arrow-right {
+        top: 44.1%;
+        padding-top: 1px;
+    }
+}
+.arrow-no-active {
+    position: absolute;
+    border: solid #F1CDB3 2px;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    padding: 23px, 19px, 23px, 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 44%;
+    transition: background-color .4s, color .4s,  border .4s;
+    cursor:  not-allowed;
+    border: solid #CDCDCD 2px;
+    color: #CDCDCD;
+    background-color: transparent;
+}

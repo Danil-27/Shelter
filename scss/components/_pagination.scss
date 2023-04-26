@@ -1,0 +1,65 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    font-family: 'Georgia';
+    padding-top: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: -3px;
+    margin-right: -3px;
+    
+    .arrow-left ,.arrow-right , .arrow-no-active {
+        position: static;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .arrow-no-active-single::before {
+        content: "<";
+    }
+    .arrow-right-single::before {
+        content: ">";
+        padding-right: 2px;
+        padding-bottom: 2px;
+    }
+    .arrow-no-active-double::before {
+        content: "<<";
+    }
+    .arrow-right-double::before {
+        content: ">>";
+        padding-right: 2px;
+        padding-bottom: 2px;
+    }
+    .arrow-left-one::before {
+        content: "1";
+        padding-right: 3px;
+    }
+}
+
+@media screen and (min-width: 420px)  {
+    .pagination {
+        margin-left: 0px;
+        margin-right: 0px;
+        .arrow-left ,.arrow-right , .arrow-no-active {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+@media screen and (min-width: 768px)  {
+    .pagination {
+        padding-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        .arrow-left ,.arrow-right , .arrow-no-active {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px)  {
+    .pagination {
+        padding-top: 30px;
+    }
+}

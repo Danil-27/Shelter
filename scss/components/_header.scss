@@ -1,0 +1,26 @@
+.header {
+    padding-top: 23px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    // 2 pages
+    &_white {
+        padding-top: 22px;
+        padding-bottom: 29.5px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding-top: 23px;
+        &__wrapper {
+            justify-content: space-between;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}

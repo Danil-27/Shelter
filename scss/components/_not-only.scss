@@ -1,0 +1,70 @@
+.not-only-background {
+    background: url(../images/not-only/noise_tran.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+}
+.not-only-background-dog {
+    background: url(../images/Dog.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: bottom;
+    background-size: 260px 270px;
+}
+@media screen and (min-width: 330px) {
+    .not-only-background-dog {
+        background-size: 300px 330px;
+    }
+}
+
+.not-only {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 60px;
+    height: 732px;
+}
+
+@media screen and (min-width: 768px) {
+    .not-only {
+        height: 1074px;
+        padding-top: 60px;
+        text-align: start;
+        &__content {
+            padding-left: 124px;
+            padding-right: 124px;
+        }
+    }
+    .not-only-background-dog {
+        background-position-x: calc(100% - 30px);
+        background-size: 569px 593px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .not-only {
+        height: 817px;
+        &__content {
+            max-width: 32%;
+            padding-top: 194px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    .not-only-background-dog {
+        background-position-x: calc(100% - 40px);
+        background-size: 698px 728px;
+    }
+}
+@media screen and (min-width: 1020px) {
+    .not-only {
+        &__content {
+            max-width: 30%;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .not-only {
+        &__content {
+            max-width: 460px;
+        }
+    }
+}

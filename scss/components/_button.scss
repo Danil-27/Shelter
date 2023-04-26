@@ -1,0 +1,26 @@
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Georgia';
+    font-size: 17px;
+    color: var(--black);
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+    background: transparent;
+    transition: background-color 0.3s;
+    &_primary{
+        background-color: var(--buttom-normal);
+    }
+    &:hover {
+        background-color: var(--click-hover);
+        transition: background-color 0.6s;
+        border: none;
+    }
+}
+
+
+

@@ -1,0 +1,23 @@
+.card {
+    display: block;
+    width: 270px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--menu-active);
+    transition: background-color 0.35s ease-out, box-shadow 0.35s ease-out;
+    border-radius: 9px;
+    .paragraph {
+        color: var(--Wet-asphalt-color);
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: var(--white);
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        transition: background-color 0.35s ease-out, box-shadow 0.35s ease-out;
+        .button {
+            background-color:var( --click-hover) ;
+        }
+    }
+}

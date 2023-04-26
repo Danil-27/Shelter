@@ -1,0 +1,42 @@
+html.noScroll, html.noScrollPopup {
+   overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body{
+   font-size: var(--base-font-size);
+   line-height: var(--baseline);
+   height: 100%;
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--color-bg-white);
+}
+
+h1, h2, h3 {
+    font-weight: var(--font-weight);
+    font-style: var(--font-style);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-------------------   Прижимаю footer к низу ----------------*/ 
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+    min-height: 100px;
+}
+
+
+

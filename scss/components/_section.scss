@@ -1,0 +1,387 @@
+
+.section {
+    &_not-only {
+        .title {
+            color: var(--white);
+            font-size: 25.5px;
+            line-height: 32px;
+            letter-spacing: 1.1px;
+        }
+        .paragraph {
+            padding-top: 42px;
+            padding-bottom: 41px;
+            color: var(--light-telegray);
+        }
+        .button {
+            width: 206px;
+            margin: auto;
+            border: none;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            letter-spacing: 1px;
+        }
+    }
+    &_about {
+        padding-top: 42px;
+        padding-bottom: 82px;
+        .title {
+            padding-bottom: 26px;
+            text-align: center;
+            font-size: 26px;
+            letter-spacing: 1px;
+            line-height: 31.9px;
+        }
+        .paragraph:first-of-type{
+            padding-bottom: 22px;
+        }
+    }
+    &_our-friends {
+        padding-top: 43px;
+        padding-bottom: 42px;
+        background-color: var(--bg);
+        .title {
+            text-align: center;
+            font-size: 25px;
+            line-height: 128%;
+            letter-spacing: 1.5px;
+            padding-bottom: 41.5px;
+        }
+        .paragraph {
+            font-family: 'Georgia';
+            letter-spacing: .8px;
+            padding-top: 23.3px;
+            padding-bottom: 33px;
+            font-size: 21px;
+            line-height: 19px;
+        }
+        .button {
+            width: 188px;
+            height: 51px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100px;
+            letter-spacing: 1px;
+            &_primary {
+                width: 260px;
+                margin-top: 116px;;
+            }
+        }
+    }
+    &_help {
+        padding-top: 42px;
+        padding-bottom: 37px;
+        .title {
+            font-size: 26px;
+            line-height: 125%;
+            letter-spacing: 1px;
+            padding-bottom: 41px;
+        }
+        .paragraph {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 17.2px;
+            font-size: 15.5px;
+            letter-spacing: .7px;
+            font-family: var(--font-family);
+            color: var(--Wet-asphalt-color)
+
+        }
+    }
+    &_donation {
+        padding-top: 42px;
+        padding-bottom: 40px;
+        background: var(--bg);
+        color: var(--Wet-asphalt-color);
+        .title {
+            font-size: 25px;
+            line-height: 129%;
+            letter-spacing: 1.5px;
+        }
+        .subtitle {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 2px;
+        }
+        .button {
+            width: 281px;
+            height: 43px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 9px;
+            border: none;
+            span {
+                padding-left: 13px;
+            }
+            img {
+                padding-bottom: 3px;
+            }
+        }
+        .paragraph {
+            padding-top: 20px;
+            padding-bottom: 42px;
+            color: var(--dark-asphalt);
+            font-family: 'Arial';
+            font-style: italic;
+            font-size: 12px;
+            line-height: 18px;
+            width: 280px;
+            text-align: justify;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &_footer {
+        padding-top: 31px;
+        .title {
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom: 40px;
+            text-align: center;
+            font-size: 25px;
+            line-height: 128%;
+            color:  var(--white);
+            letter-spacing: 1.5px;
+            .is-block {
+                display: inline;
+            }
+        }
+    }
+    // Pages TWO
+    &_gallery {
+        padding-top: 44px;
+        padding-bottom: 42px;
+        background-color: var(--bg);
+        .title {
+            text-align: center;
+            font-size: 25px;
+            line-height: 128%;
+            letter-spacing: 1.5px;
+            padding-bottom: 40px;
+        }
+        .button {
+            width: 188px;
+            height: 51px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100px;
+            letter-spacing: 1px;
+            color: var(--dark-w);
+        }
+        .paragraph {
+            font-family: 'Georgia';
+            letter-spacing: .8px;
+            padding-top: 23.3px;
+            padding-bottom: 34px;
+            font-size: 21px;
+            line-height: 19px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        &_not-only {
+            .title {
+                font-size: 44px;
+                line-height: 57px;
+                letter-spacing: .1px;
+            }
+            .paragraph {
+                padding-top: 42px;
+                padding-bottom: 41px;
+            }
+            .button {
+                width: 206px;
+            }
+        }
+        &_about {
+            padding-top: 82px;
+            padding-bottom: 179px;
+            .title {
+                text-align: start;
+                font-size: 36px;
+                line-height: 44px;
+                letter-spacing: 1.6px;
+                padding-left: 1px;
+                padding-bottom: 26.5px;
+            }
+            .paragraph {
+                max-width: 430px;
+                text-align: start;
+            }
+            .paragraph:first-of-type{
+                padding-bottom: 25px;
+            }
+        }
+        &_our-friends {
+            padding-top: 80px;
+            padding-bottom: 100px;
+            .title {
+                font-size: 35px;
+                line-height: 130%;
+                letter-spacing: 1.9px;
+                padding-bottom: 58px;
+            }
+            .paragraph {
+                padding-bottom: 34px;
+            }
+            .button {
+                width: 186px;
+                height: 51px;
+                padding-top: 0px;
+                &_primary {
+                    width: 260px;
+                    height: 51.5px;
+                    margin-top: 61px;;
+                }
+            }
+        }
+        &_help {
+            padding-top: 82px;
+            padding-bottom: 95px;
+            .title {
+                font-size: 35px;
+                line-height: 125%;
+                letter-spacing: 2px;
+                padding-bottom: 62px;
+            }
+            .paragraph {
+                font-size: 20px;
+                line-height: 115%;
+                margin-top: 28px;
+            }
+        }
+        &_donation {
+            padding-top: 81px;
+            padding-bottom: 99.5px;
+            .title {
+                font-size: 35px;
+                line-height: 130%;
+                letter-spacing: 2px;
+            }
+            .subtitle {
+                padding-top: 17px;
+                padding-bottom: 15px;
+                letter-spacing: 0.06em;
+
+            }
+            .button {
+                justify-content: start;
+                width: 349px;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding-left: 12px;
+                span {
+                    white-space: nowrap;
+                    font-size: 20px;
+                    line-height: 130%;
+                    letter-spacing: 1.2px;
+                    padding-left: 15px;
+                }
+                img {
+                    padding-bottom: 1px;
+                }
+            }
+            .paragraph {
+                margin-right: 0px;
+                margin-left: 0px;
+                width: 360px;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 0.75rem;
+                line-height: 18.1px;
+                text-align: start;
+                word-spacing: 2.3px;
+                padding-bottom: 60px;
+            }
+        }
+        &_footer {
+            .footer__adress {
+                .title {
+                    margin-left: -3px;
+                }
+            }
+            .title {
+                font-size: 35px;
+                line-height: 130%;
+                text-align: start;
+                letter-spacing: 0.13rem;
+                padding-bottom: 37px;
+                .is-block {
+                    display: block;
+                }
+            }
+        }
+        &_gallery {
+            padding-top: 80px;
+            padding-bottom: 75px;
+            .title {
+                padding-bottom: 29px;
+                font-size: 35px;
+                line-height: 130%;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section {
+        &_not-only {
+            .button {
+                margin: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .section {
+        &_about {
+            padding-bottom: 113px;
+        }
+        &_our-friends {
+            padding-top: 67px;
+            .title {
+                line-height: 126%;
+                letter-spacing: 2.1px;
+                padding-bottom: 60px;
+            }
+            .paragraph {
+                padding-bottom: 34px;
+            }
+            .button {
+                &_primary {
+                    width: 260px;
+                    height: 51.5px;
+                    margin-top: 60px;
+                    padding-top: 2px;
+                }
+            }
+        }
+        &_donation {
+            .paragraph {
+                padding-bottom: 0px;
+            }
+        }
+        &_footer {
+            padding-top: 0px;
+            .title {
+                line-height: 1.26;
+                padding-bottom: 39px;
+            }
+        }
+        &_gallery {
+            padding-top: 80px;
+            padding-bottom: 100px;
+            .title {
+                padding-bottom: 58px;
+                font-size: 35px;
+                line-height: 130%;
+                letter-spacing: 2px;
+            }
+        }
+        
+    }
+}
